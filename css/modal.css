@@ -1,0 +1,188 @@
+/* 
+* @Author: David Reinisch
+* @Date:   2014-07-02 16:55:11
+* @Last Modified by:   David Reinisch
+* @Last Modified time: 2014-07-08 12:38:56
+*/
+.modal-box-wrap {
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 40001;
+  display: none;
+}
+
+.modal-box-overlay { /* Shades out background when selector is active */
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-color: rgba(255,255,255,0.8);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE transparency */
+    filter:alpha(opacity=50); /* More IE transparency */
+    z-index:40001;
+}
+
+.verticalOffset { /* Fixed position to provide the vertical offset */
+    position:fixed;
+    top:30%;
+    width:100%;
+    z-index:40002; /* ensures box appears above overlay */
+}
+
+.modalBox, .scribbleWrapper {
+  background: none repeat scroll 0 0 white;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  max-height: 450px;
+  max-width: 526px;
+  min-height: 400px;
+  min-width: 350px;
+  padding: 10px 20px;
+  position: absolute;
+  overflow-y: auto;
+  right: 0;
+  top: 0;
+}
+
+.scribbleWrapper {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  left: 0;
+  overflow: hidden;
+  padding-bottom: 65px;
+  padding-right: 80px;
+  top: 20px;
+}
+
+.scribble-right{
+  float: right;
+}
+
+.left-top{
+  position: absolute;
+}
+
+.right-bottom{
+  position: absolute;
+}
+
+.closeModal {
+  cursor: pointer;
+  margin: 50px;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  z-index: 6000;
+  background-color: white;
+}
+
+.openModal{
+  cursor: pointer;
+}
+
+.modalBox h2{
+  font-family: 'BowlbyOne', sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  color: #c91f40;
+}
+
+
+.modalBox h1{
+  font-family: 'BowlbyOne', sans-serif;
+  font-size: 1.9em;
+  font-weight: 600;
+  line-height: 2.2em;
+  text-transform: uppercase;
+  /*color: #c91f40;*/
+}
+
+.modalBox h3{
+  font-family: 'BowlbyOne', sans-serif;
+  color: #000000;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.modalBox h5{
+  font-family: 'JustMeAgain',sans-serif;   
+  font-size: 2em;
+}
+
+.dots-top{
+  margin: 15px 0;
+}
+
+.modalBox p{
+  line-height: 1.4em;
+  margin-bottom: 20px;
+}
+
+.modal-box-content{
+  padding: 20px;
+}
+
+.modalBox > div{
+  padding: 20px;
+  padding-top: 50px;
+}
+
+.modalBox hr {
+  border-image: url("./../img/dotted-border_188x9.png") 2 6 10 10 repeat repeat;
+  border-style: solid;
+  border-width: 9px;
+}
+
+.ticket-modal .scribbleWrapper, .ticket-modal .modalBox {
+  max-height: 800px;
+  max-width: 800px;
+}
+
+.modalBox legend{
+  font-family: 'BowlbyOne', sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 2em;
+  text-transform: uppercase;
+  color: #c91f40;
+}
+
+.modalBox .formgroup{
+  width: 90%;
+  text-align: left;
+}
+
+.modalBox label{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.modalBox input{
+  font-size: 1.5em;
+  width: 100%;
+  margin: 10px 0;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.modalBox .newsletter-submit {
+  background-color: #c91f40;
+  border-color: #c91f40;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  height: 40px;
+  width: 103%;
+  cursor: pointer;
+}
+
+.modalBox .error{
+  color: red;
+  text-align: center;
+}
