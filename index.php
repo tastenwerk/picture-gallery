@@ -22,15 +22,10 @@ class PictureGallery{
 
   function __construct() {   
     add_action( 'init', array( $this, 'add_js_and_css_files' ) );
-    add_action( 'admin_init', array( $this, 'insert_gallery' ) );
-  }
-
-  public function insert_gallery(){
-    // echo substr( require( "./views/icons_gallery.php" ), 0, -3);
   }
 
   public function add_js_and_css_files(){
-    wp_enqueue_script('modal', plugin_dir_url( __FILE__ ).'js/modal.js', array( 'jquery' ) );
+    wp_enqueue_script('modal_js', plugin_dir_url( __FILE__ ).'js/modal.js', array( 'jquery' ), '1.0.0' );
     wp_enqueue_style('modal_css', plugin_dir_url( __FILE__ ).'css/modal.css');
   }
 
