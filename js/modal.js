@@ -9,7 +9,7 @@ jQuery(function($) {
     $('#modal').remove();
     var $wrap = $('<div/>').attr('id','modal').addClass('modal-box-wrap');
     var $modalBox;
-    var $scribbleWrapper = $('<div/>').addClass('scribbleWrapper').html( $('<div/>').addClass('closeModal').html('<i class="fa fa-times fa-2x"></i>'));
+    var $scribbleWrapper = $('<div/>').html( $('<div/>').addClass('closeModal').html('<i class="fa fa-times fa-2x"></i>'));
 
     $modalBox = $('<div/>').addClass('modalBox').html( $('#'+$(this).attr('data-modal-id')).addClass('modal-box-content').html() );
     // $('modalBox').niceScroll();
