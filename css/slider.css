@@ -1,0 +1,67 @@
+.slider{
+  border: none;
+}
+
+.slider { 
+  height: 1%; 
+  margin: 10px 0 0; 
+  overflow:hidden; 
+  position: relative; 
+}
+.slider .viewport { 
+    height: 410px; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+body .big-viewport .viewport{
+  height: 540px;
+}
+
+body .modalBox .slider.big-viewport{
+  padding-top: 0;
+  height: 90%;
+}
+
+
+.slider h2{
+  margin-top: 0;
+}
+
+.slider .buttons {
+  display: block;
+  position: absolute;
+  bottom: 195px;
+  left: 15px;
+  background-image: url('./../img/arrows_54x33.png');
+  background-position: 0 0;
+  width: 27px;
+  height: 33px;
+  opacity: 0.7;
+  z-index: 100;
+}
+.slider .next {
+    right: 15px;
+    left: auto;
+    background-position: -27px 0;
+}
+.slider .buttons:hover{
+  opacity: 1;
+}
+.slider .disable { visibility: hidden; }
+.slider .overview { 
+  list-style: none; 
+  position: absolute; 
+  padding: 0; 
+  margin: 0; 
+  width: 794px; 
+  left: 0 
+  top: 0; 
+}
+.slider .overview li{ 
+  float: left; 
+  margin: 0 20px 0 0;
+  height: 500px; 
+  width: 794px;
+  cursor: pointer;
+}
