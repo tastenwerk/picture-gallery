@@ -37,11 +37,11 @@
   bottom: 0;
   left: 0;
   margin: auto;
-  max-height: 362px;
+  max-height: 382px;
   max-width: 526px;
   /* min-height: 320px; */
   /* min-width: 350px; */
-  padding: 20px 20px;
+  padding: 40px 20px 20px;
   position: absolute;
   overflow-y: auto;
   right: 0;
@@ -60,8 +60,8 @@
   cursor: pointer;
   margin: 50px;
   position: absolute;
-  right: 0;
-  top: -10px;
+  right: -40px;
+  top: -40px;
   z-index: 6000;
   background-color: white;
 }
@@ -115,11 +115,11 @@
   padding: 20px;
 }
 
-.modalBox > div{
+/*.modalBox > div{
   padding: 20px;
   padding-top: 50px;
 }
-
+*/
 .modalBox hr {
   border-image: url("./../img/dotted-border_188x9.png") 2 6 10 10 repeat repeat;
   border-style: solid;

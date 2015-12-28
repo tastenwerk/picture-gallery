@@ -4,6 +4,5 @@ $(document).ready(function(){
       interval: true,
       intervalTime: 5000
     });
-    console.log('inside');
   }
 });
